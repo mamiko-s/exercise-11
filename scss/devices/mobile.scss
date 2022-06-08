@@ -1,0 +1,352 @@
+@media (min-width:300px) {
+    body {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 60vh;
+        padding: 5%;
+        @include bgPicture("/img/pic-11.jpg");
+        color: white;
+    }
+
+    nav {
+        height: 100%;
+        width: 30%;
+    }
+
+
+    nav>ul {
+        display: none;
+    }
+
+    details {
+        text-align: right;
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+            width: 100%;
+            display: flex;
+        }
+
+        a {
+            width: 100%;
+            padding: 10%;
+            text-decoration: none;
+            color: black;
+            background-color: rgba(245, 245, 245, 0.5);
+        }
+    }
+
+
+
+    summary {
+        font-size: $h1SizeMobile;
+    }
+
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    main>section:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        align-items: center;
+        color: $defaultColor;
+
+        h1 {
+            font-size: $h2SizeMobile;
+        }
+    }
+
+
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        color: $defaultColor;
+    }
+
+    .member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+
+        aside {
+            width: 80%;
+            height: 25vh;
+            border-radius: 5px;
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        p,
+        h2,
+        h4 {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        h2 {
+            color: $defaultBlue;
+        }
+
+        h4 {
+            color: $jobTitleColor;
+        }
+
+        a {
+            color: $defaultBlue;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    }
+
+    .member:nth-child(1)>aside {
+        @include bgPicture("/img/pic-05.jpg");
+    }
+
+    .member:nth-child(2)>aside {
+        @include bgPicture("/img/pic-08.jpg");
+    }
+
+    .member:nth-child(3)>aside {
+        @include bgPicture("/img/pic-07.jpg");
+    }
+
+    .member:nth-child(4)>aside {
+        @include bgPicture("/img/pic-06.jpg");
+    }
+
+    .member:nth-child(5)>aside {
+        @include bgPicture("/img/pic-09.jpg");
+    }
+
+
+    .subcsription {
+        @include bgPicture("/img/pic-11.jpg");
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        input {
+            padding: 2%;
+            font-family: $defaultFont;
+        }
+
+        [type="email"] {
+            width: 60%;
+            border: 0px none transparent;
+        }
+
+        [type="submit"] {
+            color: white;
+            background-color: $defaultBlue;
+            border: 0px none transparent;
+        }
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        color: $defaultColor;
+
+        >article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 1%;
+            text-align: center;
+            min-height: 35vh;
+            row-gap: 35px;
+        }
+
+        i {
+            font-size: 40px;
+        }
+
+        a {
+            padding: 5%;
+            color: white;
+            text-decoration: none;
+        }
+
+        article:nth-child(1)>a {
+            background-color: $defaultBlue;
+        }
+
+        article:nth-child(2)>a {
+            background-color: $defaultRed;
+        }
+
+        article:nth-child(3)>a {
+            background-color: $defaultGreen;
+        }
+    }
+
+    .history {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        >aside {
+            @include bgPicture;
+            width: 100%;
+            height: 20vh;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        >article {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        h1 {
+            color: $defaultBlue;
+            font-size: $h3SizeMobile;
+            font-weight: 300;
+        }
+
+        p {
+            color: $defaultColor;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        color: $defaultColor;
+
+        >article,
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            row-gap: 15px;
+        }
+
+        >article:nth-child(1) {
+            row-gap: 30px;
+        }
+
+        h1 {
+            color: $defaultRed;
+            font-size: $h1SizeMobile;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            align-items: flex-end;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            font-family: $defaultFont;
+            padding: 4%;
+            border: 0px none transparent;
+            border-bottom: 2px solid $defaultColor;
+            font-size: 18px;
+            padding-bottom: 5%;
+        }
+
+        textarea {
+            height: 15vh;
+        }
+
+        /*
+        Attribite selector is more specific than tag selector. because not every tag has the same attribute. that is why the atribute selector css will overwrite the tag selector css.
+        */
+
+        [type="submit"] {
+            width: fit-content;
+            border: 0px none transparent;
+            color: white;
+            background-color: $defaultGreen;
+
+        }
+
+
+
+        h2,
+        [class^="fa-"] {
+            color: $defaultGreen;
+        }
+
+        aside {
+            display: flex;
+            flex-wrap: wrap;
+            column-count: 20px;
+            row-gap: 20px;
+
+            >a {
+                font-size: 14px;
+                width: fit-content;
+            }
+        }
+
+        div {
+            font-size: 28px;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    footer {
+        text-align: center;
+    }
+}
